@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: "Soap's Status Page"
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -15,23 +15,45 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: anidl-org # unique identifier
+    name: AniDL
+    description: 'AniDL main website.' # default=empty
+    url: 'https://anidl.org/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: itssoap-ninja
+    name: Soap#1
+    description: "Soap's Index 1."
+    url: 'https://itssoap.ninja/'
     method: GET
     expectStatus: 200
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: teamdrive-soap-workers-dev
+    name: Soap#2
+    description: "Soap's Index 2."
+    url: 'https://teamdrive.soap.workers.dev/'
+    method: GET
+    expectStatus: 200
+    
+  - id: bd-soap-workers-dev
+    name: Soap#3
+    description: "Soap's BD Index."
+    url: 'https://bd.soap.workers.dev/'
+    method: GET
+    expectStatus: 200
+    
+  - id: jfofbz-deta-dev
+    name: Soap#5
+    description: "Soap's Batch API."
+    url: 'https://jfofbz.deta.dev/'
+    method: GET
+    expectStatus: 200
+  
+  - id: afu99e-deta-dev
+    name: Soap#5
+    description: "Soap's Mirror API."
+    url: 'https://afu99e.deta.dev/'
     method: GET
     expectStatus: 200
