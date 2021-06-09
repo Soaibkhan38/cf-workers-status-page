@@ -24,9 +24,16 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: rain
-    name: Rain
+    name: Rain Ongoing
     description: "Rain's Ongoing Index."
     url: 'https://ongoing.rain11.workers.dev/'
+    method: GET
+    expectStatus: 200
+
+  - id: rain
+    name: Rain BD
+    description: "Rain's BD Index."
+    url: 'https://raindrive.rain11.workers.dev/'
     method: GET
     expectStatus: 200
     
