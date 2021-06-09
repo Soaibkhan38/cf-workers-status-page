@@ -51,6 +51,13 @@ monitors:
     method: GET
     expectStatus: 200
     
+  - id: zero1
+    name: XeZero PasteBin
+    description: "Zero's Pastebin."
+    url: 'https://iamzlnk.xyz/'
+    method: GET
+    expectStatus: 200
+    
   - id: itssoap-ninja
     name: Soap Ongoing 2
     description: "Soap's Index 1."
