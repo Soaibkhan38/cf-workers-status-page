@@ -1,5 +1,5 @@
 settings:
-  title: "Soap's Status Page"
+  title: "Status"
   url: 'https://status.itssoap.ninja' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -22,6 +22,20 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
+
+  - id: rain
+    name: Knightking
+    description: "Knightking's Index."
+    url: 'https://kksdrive.soap2.workers.dev/'
+    method: GET
+    expectStatus: 200
+
+  - id: rain
+    name: 54x1
+    description: "54x1's Ongoing Index."
+    url: 'https://mydrive.fivefourxone.workers.dev/'
+    method: GET
+    expectStatus: 200
 
   - id: rain
     name: Rain Ongoing
@@ -66,14 +80,14 @@ monitors:
     expectStatus: 200
     
   - id: itssoap-ninja
-    name: Soap Ongoing 2
+    name: Soap Ongoing 1
     description: "Soap's Index 1."
     url: 'https://itssoap.ninja/'
     method: GET
     expectStatus: 200
 
   - id: teamdrive-soap-workers-dev
-    name: Soap Ongoing 1
+    name: Soap Ongoing 2
     description: "Soap's Index 2."
     url: 'https://teamdrive.soap.workers.dev/'
     method: GET
